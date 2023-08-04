@@ -16,7 +16,8 @@ selec2= totcri2~=0;
 clear matcri2 totcri2 cri2
 
 %crit3- además uno de A,B,C,D o E tiene valor 4 o 3
-matcri3= matsuj(:, 15:18);
+% matcri3= matsuj(:, 15:18); % ERROR
+matcri3= matsuj(:, 15:19);
 cri3= abs(matcri3)>=3;
 selec3=[];
 totcri3= sum(cri3,2);
