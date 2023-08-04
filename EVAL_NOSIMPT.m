@@ -17,7 +17,8 @@ selec2= totcri2~=0;
 clear matcri2 totcri2 cri2
 
 %crit3- ademas uno de A,B,C,D o E tiene valor 4 (TDPM) o 3 (SPM)
-matcri3= matsuj(:, 15:18);
+% matcri3= matsuj(:, 15:18);
+ matcri3= matsuj(:, 15:19); % includes A to E criteria 
 cri3= abs(matcri3)>=3;
 totcri3= sum(cri3,2);
 selec3= totcri3~=0;
